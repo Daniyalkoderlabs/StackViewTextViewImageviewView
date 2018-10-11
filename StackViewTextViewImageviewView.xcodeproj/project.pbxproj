@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E351C5F216F2F620027529C /* DynamicallyIncreasingheight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E351C5D216F2F620027529C /* DynamicallyIncreasingheight.swift */; };
+		2E351C60216F2F620027529C /* DynamicallyIncreasingheight.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E351C5E216F2F620027529C /* DynamicallyIncreasingheight.xib */; };
 		2EBEF77D216E2DAF0078AF79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBEF77C216E2DAF0078AF79 /* AppDelegate.swift */; };
 		2EBEF77F216E2DAF0078AF79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBEF77E216E2DAF0078AF79 /* ViewController.swift */; };
 		2EBEF782216E2DAF0078AF79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EBEF780216E2DAF0078AF79 /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E351C5D216F2F620027529C /* DynamicallyIncreasingheight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicallyIncreasingheight.swift; sourceTree = "<group>"; };
+		2E351C5E216F2F620027529C /* DynamicallyIncreasingheight.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicallyIncreasingheight.xib; sourceTree = "<group>"; };
 		2EBEF779216E2DAF0078AF79 /* StackViewTextViewImageviewView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackViewTextViewImageviewView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EBEF77C216E2DAF0078AF79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EBEF77E216E2DAF0078AF79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +70,8 @@
 				2EBEF788216E2DB10078AF79 /* Info.plist */,
 				2EBEF78E216E2F110078AF79 /* CellB.swift */,
 				2EBEF78F216E2F110078AF79 /* CellB.xib */,
+				2E351C5D216F2F620027529C /* DynamicallyIncreasingheight.swift */,
+				2E351C5E216F2F620027529C /* DynamicallyIncreasingheight.xib */,
 			);
 			path = StackViewTextViewImageviewView;
 			sourceTree = "<group>";
@@ -131,6 +137,7 @@
 				2EBEF791216E2F110078AF79 /* CellB.xib in Resources */,
 				2EBEF787216E2DB10078AF79 /* LaunchScreen.storyboard in Resources */,
 				2EBEF784216E2DB10078AF79 /* Assets.xcassets in Resources */,
+				2E351C60216F2F620027529C /* DynamicallyIncreasingheight.xib in Resources */,
 				2EBEF782216E2DAF0078AF79 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EBEF790216E2F110078AF79 /* CellB.swift in Sources */,
+				2E351C5F216F2F620027529C /* DynamicallyIncreasingheight.swift in Sources */,
 				2EBEF77F216E2DAF0078AF79 /* ViewController.swift in Sources */,
 				2EBEF77D216E2DAF0078AF79 /* AppDelegate.swift in Sources */,
 			);

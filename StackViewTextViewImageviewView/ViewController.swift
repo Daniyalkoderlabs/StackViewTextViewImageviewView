@@ -9,13 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var dataSource: [String] = ["Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt END!"]
     @IBOutlet weak var baseTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         baseTableView.estimatedRowHeight = 77
         baseTableView.rowHeight = UITableView.automaticDimension
         baseTableView.register(UINib.init(nibName: "CellB", bundle: nil), forCellReuseIdentifier: "cellb")
+        baseTableView.register(UINib.init(nibName: "DynamicallyIncreasingheight", bundle: nil), forCellReuseIdentifier: "cellc")
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -29,7 +30,7 @@ extension ViewController : UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -44,6 +45,14 @@ extension ViewController : UITableViewDataSource, UITableViewDelegate {
             defaultCellB.setTextViewText = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco END"
             return defaultCellB
             
+        } else if indexPath.row == 2 {
+            
+            let cellC = tableView.dequeueReusableCell(withIdentifier: "cellc") as! DynamicallyIncreasingheight
+            cellC.textView = dataSource[0]
+            cellC.delegate = self
+            return cellC
+            
+            
         }
         else {
             var defaultCell = tableView.dequeueReusableCell(withIdentifier: "cella")
@@ -54,14 +63,21 @@ extension ViewController : UITableViewDataSource, UITableViewDelegate {
              return defaultCell!
             
         }
-        
-        
-       
+    }
+}
+
+extension ViewController: DynamicallyIncreasingheightDelegate {
+    
+    func didtapAdd(text: String, cell: UITableViewCell) {
+        dataSource[0] = text
+        let celltoReload = cell
+        let indexPath: IndexPath = baseTableView.indexPath(for: celltoReload)!
+        baseTableView.reloadRows(at: [indexPath], with: .none)
         
     }
     
-    
-    
-    
 }
+
+
+
 

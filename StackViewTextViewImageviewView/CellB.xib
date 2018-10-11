@@ -85,7 +85,7 @@ EERPV04gVklFVw
                 <outlet property="viewbottom" destination="HOE-6h-77D" id="maD-Qj-46V"/>
                 <outlet property="viewtop" destination="ZFk-ij-12P" id="ESV-3I-Odd"/>
             </connections>
-            <point key="canvasLocation" x="-546" y="5"/>
+            <point key="canvasLocation" x="-566" y="5"/>
         </tableViewCell>
     </objects>
 </document>
