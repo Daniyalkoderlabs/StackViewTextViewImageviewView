@@ -30,8 +30,8 @@ class DynamicallyIncreasingheight: UITableViewCell {
     }
     
     
-    @IBOutlet weak var lblTitle: UILabel!
-    @IBOutlet weak var tFMessage: UITextField!
+    @IBOutlet weak private var lblTitle: UILabel!
+    @IBOutlet weak private var tFMessage: UITextField!
     @IBOutlet weak private var textViewBase: UITextView!
     override func awakeFromNib() {
         super.awakeFromNib()
